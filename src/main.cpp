@@ -1,6 +1,7 @@
 #include <string>
 #include <thread>
 
+// TODO make these imports more explicit
 #include "filebuffer.h"
 #include "messages.h"
 
@@ -29,7 +30,7 @@ void SendMessagesFromWorker2()
 {
   FileBuffer buffer;
 
-  for (auto i = 0; i < 25 * 1000; ++i) // will just be under the 1Mb buffer size
+  for (auto i = 0; i < 15 * 1000; ++i) // will just be under the 1Mb buffer size
   {
     TraderKeyLoginMessage traderKeyLoginMessage;
     traderKeyLoginMessage.SetTraderName("Trader2");
@@ -52,3 +53,4 @@ int main()
   worker2.join();
 }
 
+// TODO write consumer class (including extracting timestamps, and reading from stream)
