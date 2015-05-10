@@ -1,8 +1,8 @@
 #include <string>
 #include <thread>
 
-#include "x_fastlogger/filebuffer.h"
-#include "x_messages/messages.h"
+#include "filebuffer.h"
+#include "messages.h"
 
 using namespace std;
 
@@ -44,7 +44,6 @@ void SendMessagesFromWorker2()
   }
 }
 
-// TODO create submodules
 int main()
 {
   std::thread worker1(SendMessagesFromWorker1);
