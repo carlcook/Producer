@@ -1,8 +1,8 @@
 #include <string>
 #include <thread>
 
-#include "filebuffer.h"
-#include "messages.h"
+#include "x_filebuffer/filebuffer.h"
+#include "x_messages/messages.h"
 
 using namespace std;
 
@@ -44,13 +44,12 @@ void SendMessagesFromWorker2()
   }
 }
 
+// TODO create submodules
 int main()
 {
   std::thread worker1(SendMessagesFromWorker1);
   std::thread worker2(SendMessagesFromWorker2);
   worker1.join();
   worker2.join();
-
-  // TODO write sample program to read (to verify)
 }
 
