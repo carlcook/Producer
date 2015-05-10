@@ -53,4 +53,10 @@ int main()
   worker2.join();
 }
 
-// TODO write consumer class (including extracting timestamps, and reading from stream)
+// TODO write consumer class (including extracting timestamps, populating messages, and then calling GenerateMessage() on them)
+
+// Messages will need a deserialisation routine
+
+// Plus a factory to deserialise the right type based on the message type read in
+
+// Also test CPU affinity - i.e. kernel writes should not be happening on isolated thread
