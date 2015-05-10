@@ -1,7 +1,7 @@
 #include <string>
 #include <thread>
 
-#include "x_filebuffer/filebuffer.h"
+#include "x_fastlogger/filebuffer.h"
 #include "x_messages/messages.h"
 
 using namespace std;
