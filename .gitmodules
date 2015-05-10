@@ -1,6 +1,3 @@
-[submodule "x_fastlogger"]
-	path = x_fastlogger
-	url = git@github.com:carlcook/FastLogger.git
 [submodule "x_messages"]
 	path = x_messages
 	url = git@github.com:carlcook/Messages.git
